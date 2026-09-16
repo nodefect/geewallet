@@ -14,4 +14,5 @@ echo "deb [signed-by=/usr/share/keyrings/mono-official-archive-keyring.gpg] http
 apt update
 
 DEBIAN_FRONTEND=noninteractive apt install --yes ca-certificates-mono mono-devel fsharp
+cert-sync /etc/ssl/certs/ca-certificates.crt
 mono --version
